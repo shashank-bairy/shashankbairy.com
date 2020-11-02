@@ -2,4 +2,13 @@
 layout: layouts/base.njk
 templateClass: tmpl-home
 ---
+<div class="profile-container">
+  <div>
+    <img class="profile-img" src="{{ '/img/profile.jpg' | url }}" alt="Profile photo">
+  </div>
+  <div class="profile-text">
+    <h1 class="profile-title">{{ metadata.title }}</h1>
+    <p class="profile-subtitle">{{ metadata.subtitle }}</p>
+  </div>
+</div>
 {{ content | safe }}

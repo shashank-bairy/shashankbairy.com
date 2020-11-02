@@ -1,11 +1,9 @@
 :root {
-  --red: #C5004A;
-  --darkred: #7F0036;
+  --red: #c5004a;
+  --darkred: #7f0036;
   --lightgray: #e0e0e0;
-  --gray: #C0C0C0;
+  --gray: #c0c0c0;
   --darkgray: #333;
-  --navy: #17050F;
-  --blue: #082840;
   --white: #fff;
 }
 * {
@@ -13,8 +11,12 @@
 }
 html,
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
   font-family: system-ui, sans-serif;
   color: var(--darkgray);
   background-color: var(--white);
@@ -32,24 +34,32 @@ p,
   line-height: 1.45;
 }
 a[href] {
-  color: var(--blue);
+  color: var(--darkgray);
 }
 a[href]:visited {
-  color: var(--navy);
+  color: var(--darkgray);
 }
 main {
   padding: 1rem;
+  flex: 1;
 }
 main :first-child {
   margin-top: 0;
 }
 header {
-  border-bottom: 1px dashed var(--lightgray);
+  border-bottom: 1px dashed var(--gray);
 }
 header:after {
   content: "";
   display: table;
   clear: both;
+}
+footer {
+  bottom: 0;
+  border-top: 1px dashed var(--gray);
+  height: 3rem;
+  display: flex;
+  align-items: center;
 }
 table {
   margin: 1em 0;
@@ -61,7 +71,10 @@ table th {
 
 pre,
 code {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
+    "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
+    "Courier New", Courier, monospace;
   line-height: 1.5;
 }
 pre {
@@ -80,7 +93,7 @@ pre {
   -ms-hyphens: none;
   hyphens: none;
   padding: 1em;
-  margin: .5em 0;
+  margin: 0.5em 0;
   background-color: #f6f6f6;
 }
 .highlight-line {
@@ -105,13 +118,46 @@ pre {
 }
 .highlight-line-active {
   background-color: #444;
-  background-color: hsla(0, 0%, 27%, .8);
+  background-color: hsla(0, 0%, 27%, 0.8);
 }
 .highlight-line-add {
   background-color: #45844b;
 }
 .highlight-line-remove {
   background-color: #902f2f;
+}
+
+/* Container */
+.container {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 100%;
+    min-width: 20rem;
+  }
+}
+
+/* Profile */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.profile-img {
+  height: 10rem;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.profile-text {
+  margin-left: 0.75rem;
 }
 
 /* Header */
@@ -155,7 +201,6 @@ pre {
 .postlist-item:before {
   display: inline-block;
   pointer-events: none;
-  content: "" counter(start-from, decimal-leading-zero) ". ";
   line-height: 100%;
   text-align: right;
 }
@@ -169,7 +214,7 @@ pre {
 }
 .postlist-link {
   display: inline-block;
-  padding: 0.25em 0.1875em; /* 4px 3px /16 */
+  padding: 0.5em 1.25em; /* 8px 20px /16 */
 }
 .postlist-item-active .postlist-link {
   font-weight: bold;
@@ -179,7 +224,6 @@ pre {
   font-weight: 700;
 }
 
-
 /* Tags */
 .post-tag {
   display: inline-block;
@@ -187,7 +231,7 @@ pre {
   text-transform: uppercase;
   font-size: 0.625em; /* 10px /16 */
   padding: 2px 4px;
-  margin-left: 0.8em; /* 8px /10 */
+  margin-right: 0.8em; /* 8px /10 */
   background-color: var(--red);
   color: var(--white);
   border-radius: 0.25em; /* 3px /12 */
@@ -212,7 +256,7 @@ a[href].post-tag:visited {
   font-family: sans-serif;
   text-decoration: none;
   font-style: normal;
-  margin-left: .1em;
+  margin-left: 0.1em;
 }
 a[href].direct-link,
 a[href].direct-link:visited {
@@ -223,4 +267,46 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+
+/* Image Responsiveness */
+
+.responsive-img {
+  width: 100%;
+}
+
+/* List */
+
+.list-item {
+  padding-bottom: 1.5rem;
+}
+
+.list-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.github-logo {
+  height: 1.25em;
+  padding-left: 0.5rem;
+}
+
+.page-selector {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Post */
+.post-end {
+  text-align: center;
+}
+
+.post-end-line {
+  width: 3rem;
+}
+
+/* Footer */
+.footer-text {
+  color: var(--darkgray);
+  font-size: 0.8125em;
 }

@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+title: Blog | Shashank Bairy
+permalink: /blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}
+pagination:
+  data: collections.posts
+  size: 10
+  reverse: true
+  alias: posts
+eleventyNavigation:
+  key: Blog
+  order: 2
+---
+
+<h1>Blog</h1>
+
+{% set postslist = posts | reverse %}
+{% include "postslist.njk" %}
+
+<p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+
+<!-- Pagination links -->
+<div class="page-selector">
+  <div class="page-selector-previous">
+    {% if pagination.previousPageHref %}
+      <a href="{{ pagination.previousPageHref }}" class="page-numbers">
+        Previous
+      </a>
+    {% endif %}
+  </div> 
+  <div class="page-selector-current">
+    <span class="page-numbers ">
+      Page: {{ pagination.pageNumber + 1 }} of {{ pagination.links | length  }}
+    </span>
+  </div> 
+  <div class="page-selector-next">
+    {% if pagination.nextPageHref %}
+      <a href="{{ pagination.nextPageHref }}" class="page-numbers">Next</a>
+    {% endif %}
+  </div> 
+</div>
+
