@@ -309,4 +309,5 @@ a[href].direct-link:focus:visited,
 .footer-text {
   color: var(--darkgray);
   font-size: 0.8125em;
+  margin-left: 1em;
 }
