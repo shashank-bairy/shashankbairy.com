@@ -1,21 +1,21 @@
 {
   "title": "Shashank Bairy",
   "subtitle": "Full Stack Developer based in Bengaluru",
-  "url": "https://shashankbairy.com/",
+  "url": "https://shashankbairy.netlify.app/",
   "description": "Shashank Bairy's blog and website.",
   "feed": {
     "subtitle": "Full Stack Developer based in Bengaluru.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://shashankbairy.com/"
+    "id": "https://shashankbairy.netlify.app/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://shashankbairy.com/feed/feed.json"
+    "url": "https://shashankbairy.netlify.app/feed/feed.json"
   },
   "author": {
     "name": "Shashank Bairy R",
     "email": "shashank.bairy04@gmail.com",
-    "url": "https://shashankbairy.com/about-me/"
+    "url": "https://shashankbairy.netlify.app/about/"
   }
 }
