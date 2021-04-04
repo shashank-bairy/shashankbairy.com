@@ -278,7 +278,7 @@ a[href].direct-link:focus:visited,
 /* List */
 
 .list-item {
-  padding-bottom: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 .list-title-container {
