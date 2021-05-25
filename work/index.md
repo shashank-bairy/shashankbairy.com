@@ -29,8 +29,8 @@ eleventyNavigation:
   </li>
   <li class="list-item">
     <div class="list-title-container">
-      <b>spotify/backstage</b>
-      <a href="https://github.com/spotify/backstage" target="_blank">
+      <b>backstage/backstage</b>
+      <a href="https://github.com/backstage/backstage" target="_blank">
         <img class="github-logo" src="{{ '/icons/github.svg' | url }}" alt="Github logo" />
       </a>
     </div>
