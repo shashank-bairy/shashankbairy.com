@@ -23,7 +23,7 @@ eleventyNavigation:
         <a href="https://github.com/netlify/netlify-cms/pull/3643" target="_blank">Added "filter" selector to the collection view.</a>
       </li>
       <li class="list-item">
-        <a href="https://github.com/netlify/netlify-cms/pull/5316" target="_blank">Added support for react 17</a>
+        <a href="https://github.com/netlify/netlify-cms/pull/5316" target="_blank">Added support for react 17.</a>
       </li>
     </ul>
   </li>
