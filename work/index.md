@@ -22,6 +22,9 @@ eleventyNavigation:
       <li class="list-item">
         <a href="https://github.com/netlify/netlify-cms/pull/3643" target="_blank">Added "filter" selector to the collection view.</a>
       </li>
+      <li class="list-item">
+        <a href="https://github.com/netlify/netlify-cms/pull/5316" target="_blank">Added support for react 17</a>
+      </li>
     </ul>
   </li>
   <li class="list-item">
@@ -37,6 +40,9 @@ eleventyNavigation:
       </li>
       <li class="list-item">
         <a href="https://github.com/backstage/backstage/pull/2623" target="_blank">Add 404 page for entity not found.</a>
+      </li>
+      <li class="list-item">
+        <a href="https://github.com/backstage/backstage/pull/5623" target="_blank">Add context to <code>version:bump</code> CLI command about breaking change in version.</a>
       </li>
       <li class="list-item">
         <a href="https://github.com/backstage/backstage/pull/3365" target="_blank">Improve search match.</a>
