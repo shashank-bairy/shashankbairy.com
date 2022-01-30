@@ -1,10 +1,10 @@
 {
   "title": "Shashank Bairy",
-  "subtitle": "Full Stack Developer based in Bengaluru",
+  "subtitle": "Software Engineer at PhonePe",
   "url": "https://shashankbairy.netlify.app/",
   "description": "Shashank Bairy's blog and website.",
   "feed": {
-    "subtitle": "Full Stack Developer based in Bengaluru.",
+    "subtitle": "Software Engineer at PhonePe",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://shashankbairy.netlify.app/"
@@ -14,7 +14,7 @@
     "url": "https://shashankbairy.netlify.app/feed/feed.json"
   },
   "author": {
-    "name": "Shashank Bairy R",
+    "name": "Shashank Bairy",
     "email": "shashank.bairy04@gmail.com",
     "url": "https://shashankbairy.netlify.app/about/"
   }
